@@ -1,0 +1,2 @@
+原来的deploy.ini文件里已经有一些信息
+请把deploy.ini与FileManager_014064.jar放在同一个目录下

@@ -1,0 +1,33 @@
+#if !define(AFX_MONITOR_H__00001B2AC_7CFE_46EB_BFEC_1FB30DE8BC0D__INCLUDED_)
+#define AFX_MONITOR_H__00001B2AC_7CFE_46EB_BFEC_1FB30DE8BC0D__INCLUDED_
+
+#if _MSC_VER>1000
+#program once
+#endif 
+
+#include <stdlib.h>
+#include <windows.h>
+#include <time.h>
+#include <stdio.h>
+#include <iostream>
+using namespace std;
+
+#define P(S)WaitForSingleObject(S,INFINITE);
+#define V(S)ReleaseSemaphore(S,1,NULL);
+
+const int bufferlength =20;
+
+class Monitor{
+	public :
+	Monitor();
+	virtual ~Monitor();
+	void Append(int x);
+	void Take();
+	protected:
+	void Wait(int NUM, int min, int max,LPCSTR info);
+	private:
+	int count,nextin,nextout,NUM;
+	int* buffer;
+	HANDLE notempty,,notfull, control;
+};
+#endif

@@ -1,0 +1,36 @@
+#include "stdafx.h"
+#include "Monitor.h"
+
+const int PN=5;
+const int CN=10;
+
+Monitor monitor;
+
+DWORD WINAPI produce(LPVOID lpPara){
+	int x=1;
+	monitor.Append(x);
+	return 0;
+}//write to buffer
+
+DWORD WINAPI consume(LPVOID lpPara){
+	monitor.Take();
+	return 0;
+}// read from the buffer
+
+int_tmain(int argc,_TCHAR* argv[]){
+	HANDLE threads[PN+CN];
+	//create 5threads for prodcer and run at once
+	for(int i=0;i<PN;i++){
+	threads[i] = CreateThread(NULL, 0, produce, 0,0, NULL);
+	}
+	
+	for(int j=0;j<CNn;j++){
+	threads[j+PN] = CreateThread(NULL, 0, consume, 0,0, NULL);
+	}
+
+	WaitForMultipleObjects(PN+CN,threads,TRUE,INFINITE);
+	//wait 
+	return 0;
+
+}
+

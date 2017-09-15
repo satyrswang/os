@@ -1,0 +1,64 @@
+下面这个同步算法为什么不能解决互斥了？
+ 
+bool blocked[2];
+int turn;
+ 
+void   thFunc( int id ){
+ while(true){
+  blocked[id] = true;
+  while(turn != id ){
+       while(blocked[1-id] );
+   turn = id;
+  }
+  /*
+   here go the critical section
+  */
+  printf("the thread  %d\n", id );
+  ::Sleep(rand()%500);
+  blocked[id] = false;
+  /*
+   here go the reminder section
+  */
+ }
+
+}
+ 
+void main(){
+ 
+ blocked[0] = blocked[1] = false;
+ turn = 0;
+parbegin( thFunc(0), thFunc(1) );
+ 
+ 
+ 
+}
+
+
+问题在于由于是加锁和检测是分开的。当blocked[0]＝true执行后，随之blocked[1]=true执行，如果turn=0则2号进程执行向下执行，此时，由于blocked[0]＝true，所以循环继续执行，turn＝1；这使得1号进程可以向下执行，所以两个进程都可以进入临界区，并没有锁住啊。
+turn＝1，;  会出现临界区没有任务执行。
+
+这个程序是不是可以简化为：
+
+ 1号进程 
+  
+  id=0 
+                                    
+  blocked[0] = true;
+  while(turn != 0 ){
+       while(blocked[1] );
+   turn = 0;
+  }
+  /*
+  
+
+ 2号进程
+  id=1 
+  blocked[1] = true;
+  while(turn != 1 ){
+       while(blocked[0] );
+   turn = 1;
+  }
+  
+
+ 
+very appreciate!!

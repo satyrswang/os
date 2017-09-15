@@ -1,0 +1,1 @@
+OBJS:= $(OBJS) core/ioport.o core/terminal.o core/keyboard.o core/simd.o core/kernel.o

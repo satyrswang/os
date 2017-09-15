@@ -1,0 +1,122 @@
+iframe.Dvbbs_Composition
+{
+	border: 2px inset;
+}
+.Dvbbs_Reply
+{
+	border : 1px  inset;
+}
+table.Dvbbs_Body
+{
+	background-color:gainsboro;
+	border:1px solid #CCCCCC;
+}
+.yToolbar
+{
+
+}
+.Dvbbs_Btn
+{
+	BACKGROUND-COLOR: gainsboro;
+	Text-align: center;
+	HEIGHT: 26px;
+	WIDTH: 26px;
+}
+.Dvbbs_Ico
+{
+	cursor: pointer;
+}
+.Dvbbs_TBGen
+{
+	FONT: 8pt verdana,arial,sans-serif;
+}
+
+.Dvbbs_BtnMouseOverUp
+{
+border : 1px solid #3169C6;
+background-color : #C6D3EF;
+Text-align: center;
+cursor: pointer;
+HEIGHT: 25px;
+WIDTH: 25px;
+}
+
+.Dvbbs_BtnMouseOverDown
+{
+	border : 1px solid transparent;
+	BACKGROUND-COLOR: #EEEEEE;
+	Text-align: center;
+	cursor: pointer;
+	HEIGHT: 25px;
+	WIDTH: 25px;
+}
+
+.BtnDown
+{
+	BACKGROUND-COLOR:  #8592B5;
+	cursor: pointer;
+	Text-align: center;
+}
+
+.Dvbbs_IcoDown
+{
+	cursor: pointer;
+	
+}
+
+.Dvbbs_IcoDownPressed
+{
+	cursor: pointer;
+	
+}
+
+td.Dvbbs_TabOn {
+	font: 8pt MS Sans Serif;
+	padding:1px 5px;
+	border:1px inset;
+	background-color: #EEEEEE;
+}
+
+td.Dvbbs_TabOff {
+	font: 8pt MS Sans Serif;
+	padding:1px 5px;
+	border:1px outset;
+	cursor: pointer;
+	
+}
+td.Dvbbs_SmileOn {
+	font: 9pt MS Sans Serif;
+	border:1px inset;
+	background-color: #FFD988;
+	cursor: pointer;
+	
+
+}
+td.Dvbbs_SmileOff {
+	font: 9pt MS Sans Serif;
+}
+
+.IcoOver{
+cursor: pointer;
+Text-align: center;
+HEIGHT: 22px;
+WIDTH: 22px;
+}
+.IcoOverMouseOver
+{
+border : 1px solid #3169C6;
+background-color : #C6D3EF;
+Text-align: center;
+cursor: pointer;
+HEIGHT: 22px;
+WIDTH: 22px;
+}
+.IcoOnClick
+{
+Text-align: center;
+HEIGHT: 20px;
+WIDTH: 20px;
+padding:1px 3px;
+border:1px inset;
+background-color: #EEEEEE;
+}

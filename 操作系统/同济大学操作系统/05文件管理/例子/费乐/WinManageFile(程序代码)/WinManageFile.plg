@@ -1,0 +1,167 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: WinManageFile - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/WinManageFile.res" /d "NDEBUG" /d "_AFXDLL" "C:\Documents and Settings\Administrator\桌面\ManageFile\WinManageFile(程序代码)\WinManageFile.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP14.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/WinManageFile.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\Administrator\桌面\ManageFile\WinManageFile(程序代码)\DataArea.cpp"
+"C:\Documents and Settings\Administrator\桌面\ManageFile\WinManageFile(程序代码)\DeleteFileDlg.cpp"
+"C:\Documents and Settings\Administrator\桌面\ManageFile\WinManageFile(程序代码)\DirNameDlg.cpp"
+"C:\Documents and Settings\Administrator\桌面\ManageFile\WinManageFile(程序代码)\DisplayView.cpp"
+"C:\Documents and Settings\Administrator\桌面\ManageFile\WinManageFile(程序代码)\FileDlg.cpp"
+"C:\Documents and Settings\Administrator\桌面\ManageFile\WinManageFile(程序代码)\FileFAT.cpp"
+"C:\Documents and Settings\Administrator\桌面\ManageFile\WinManageFile(程序代码)\FileFCB.cpp"
+"C:\Documents and Settings\Administrator\桌面\ManageFile\WinManageFile(程序代码)\FileOperate.cpp"
+"C:\Documents and Settings\Administrator\桌面\ManageFile\WinManageFile(程序代码)\FileSystemDlg.cpp"
+"C:\Documents and Settings\Administrator\桌面\ManageFile\WinManageFile(程序代码)\FileSystemInfo.cpp"
+"C:\Documents and Settings\Administrator\桌面\ManageFile\WinManageFile(程序代码)\Global.cpp"
+"C:\Documents and Settings\Administrator\桌面\ManageFile\WinManageFile(程序代码)\ManageMemory.cpp"
+"C:\Documents and Settings\Administrator\桌面\ManageFile\WinManageFile(程序代码)\WinManageFile.cpp"
+"C:\Documents and Settings\Administrator\桌面\ManageFile\WinManageFile(程序代码)\WinManageFileDlg.cpp"
+"C:\Documents and Settings\Administrator\桌面\ManageFile\WinManageFile(程序代码)\WriteFileDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP14.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP15.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/WinManageFile.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\Documents and Settings\Administrator\桌面\ManageFile\WinManageFile(程序代码)\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP15.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP16.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/WinManageFile.pdb" /machine:I386 /out:"Release/WinManageFile.exe" 
+".\Release\DataArea.obj"
+".\Release\DeleteFileDlg.obj"
+".\Release\DirNameDlg.obj"
+".\Release\DisplayView.obj"
+".\Release\FileDlg.obj"
+".\Release\FileFAT.obj"
+".\Release\FileFCB.obj"
+".\Release\FileOperate.obj"
+".\Release\FileSystemDlg.obj"
+".\Release\FileSystemInfo.obj"
+".\Release\Global.obj"
+".\Release\ManageMemory.obj"
+".\Release\StdAfx.obj"
+".\Release\WinManageFile.obj"
+".\Release\WinManageFileDlg.obj"
+".\Release\WriteFileDlg.obj"
+".\Release\WinManageFile.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP16.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+DataArea.cpp
+DeleteFileDlg.cpp
+DirNameDlg.cpp
+DisplayView.cpp
+FileDlg.cpp
+FileFAT.cpp
+FileFCB.cpp
+FileOperate.cpp
+FileSystemDlg.cpp
+FileSystemInfo.cpp
+Global.cpp
+ManageMemory.cpp
+WinManageFile.cpp
+WinManageFileDlg.cpp
+WriteFileDlg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+WinManageFile.exe - 0 error(s), 0 warning(s)
+<h3>
+--------------------Configuration: WinManageFile - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/WinManageFile.res" /d "_DEBUG" /d "_AFXDLL" "C:\Documents and Settings\Administrator\桌面\ManageFile\WinManageFile(程序代码)\WinManageFile.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP18.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/WinManageFile.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Documents and Settings\Administrator\桌面\ManageFile\WinManageFile(程序代码)\DataArea.cpp"
+"C:\Documents and Settings\Administrator\桌面\ManageFile\WinManageFile(程序代码)\DeleteFileDlg.cpp"
+"C:\Documents and Settings\Administrator\桌面\ManageFile\WinManageFile(程序代码)\DirNameDlg.cpp"
+"C:\Documents and Settings\Administrator\桌面\ManageFile\WinManageFile(程序代码)\DisplayView.cpp"
+"C:\Documents and Settings\Administrator\桌面\ManageFile\WinManageFile(程序代码)\FileDlg.cpp"
+"C:\Documents and Settings\Administrator\桌面\ManageFile\WinManageFile(程序代码)\FileFAT.cpp"
+"C:\Documents and Settings\Administrator\桌面\ManageFile\WinManageFile(程序代码)\FileFCB.cpp"
+"C:\Documents and Settings\Administrator\桌面\ManageFile\WinManageFile(程序代码)\FileOperate.cpp"
+"C:\Documents and Settings\Administrator\桌面\ManageFile\WinManageFile(程序代码)\FileSystemDlg.cpp"
+"C:\Documents and Settings\Administrator\桌面\ManageFile\WinManageFile(程序代码)\FileSystemInfo.cpp"
+"C:\Documents and Settings\Administrator\桌面\ManageFile\WinManageFile(程序代码)\Global.cpp"
+"C:\Documents and Settings\Administrator\桌面\ManageFile\WinManageFile(程序代码)\ManageMemory.cpp"
+"C:\Documents and Settings\Administrator\桌面\ManageFile\WinManageFile(程序代码)\WinManageFile.cpp"
+"C:\Documents and Settings\Administrator\桌面\ManageFile\WinManageFile(程序代码)\WinManageFileDlg.cpp"
+"C:\Documents and Settings\Administrator\桌面\ManageFile\WinManageFile(程序代码)\WriteFileDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP18.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP19.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/WinManageFile.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Documents and Settings\Administrator\桌面\ManageFile\WinManageFile(程序代码)\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP19.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1A.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/WinManageFile.pdb" /debug /machine:I386 /out:"Debug/WinManageFile.exe" /pdbtype:sept 
+".\Debug\DataArea.obj"
+".\Debug\DeleteFileDlg.obj"
+".\Debug\DirNameDlg.obj"
+".\Debug\DisplayView.obj"
+".\Debug\FileDlg.obj"
+".\Debug\FileFAT.obj"
+".\Debug\FileFCB.obj"
+".\Debug\FileOperate.obj"
+".\Debug\FileSystemDlg.obj"
+".\Debug\FileSystemInfo.obj"
+".\Debug\Global.obj"
+".\Debug\ManageMemory.obj"
+".\Debug\StdAfx.obj"
+".\Debug\WinManageFile.obj"
+".\Debug\WinManageFileDlg.obj"
+".\Debug\WriteFileDlg.obj"
+".\Debug\WinManageFile.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1A.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+DataArea.cpp
+DeleteFileDlg.cpp
+DirNameDlg.cpp
+DisplayView.cpp
+FileDlg.cpp
+FileFAT.cpp
+FileFCB.cpp
+FileOperate.cpp
+FileSystemDlg.cpp
+FileSystemInfo.cpp
+Global.cpp
+ManageMemory.cpp
+WinManageFile.cpp
+WinManageFileDlg.cpp
+WriteFileDlg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+WinManageFile.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
